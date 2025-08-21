@@ -3,12 +3,10 @@ import java.util.*;
 
 public class FamousChoreographer {
     static final long BASE = 1315423911L;
-
     public static void main(String[] args) throws Exception {
         FastScanner fs = new FastScanner(System.in);
         int t = fs.nextInt();
         StringBuilder out = new StringBuilder();
-
         while (t-- > 0) {
             int n = fs.nextInt();
             int m = fs.nextInt();
@@ -16,7 +14,6 @@ public class FamousChoreographer {
             for (int i = 0; i < n; i++) {
                 a[i] = fs.next().toCharArray();
             }
-
             long[] pow = new long[Math.max(n, m) + 5];
             pow[0] = 1L;
             for (int i = 1; i < pow.length; i++) pow[i] = mul64(pow[i - 1], BASE);
@@ -33,7 +30,6 @@ public class FamousChoreographer {
                     prefRev[i][j + 1] = add64(mul64(prefRev[i][j], BASE), (a[i][m - 1 - j] - 'a' + 1));
                 }
             }
-
             int bestAdd = Integer.MAX_VALUE;
             int maxV = 2 * n - 2;
             int maxU = 2 * m - 2;
