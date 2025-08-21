@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LeftAndDown {
+public class LeftAndDown2125B {
 
     private static long gcd(long a, long b) {
         while (b != 0) {

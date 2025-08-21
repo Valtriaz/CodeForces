@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Lever {
+public class Lever2131A {
     static class FastScanner {
         private final InputStream in;
         private final byte[] buffer = new byte[1 << 16];

@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class AlternatingSeris {
+public class AlternatingSeris2131B {
     static class FastScanner {
         private final InputStream in = System.in;
         private final byte[] buffer = new byte[1 << 16];
